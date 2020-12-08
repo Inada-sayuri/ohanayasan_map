@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>お花屋さんMAP</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-<p>お花屋さんマップ</p>
+    <header>
+        <div class="container">
+            <input type="checkbox" id="drawer-check" class="drawer-hidden">
+            <label for="drawer-check" class="drawer-open"><span></span></label>
+            <div class="nav-btn">
+                <nav>
+                    <ul>
+                        <li><a>トップページ</a></li>
+                        <li>お花屋さんを探す
+                            <ul>
+                                <li><a href="">MAPから探す</a></li>
+                                <li><a href="">エリアから探す</a></li>
+                            </ul>
+                        </li>
+                        <li>COLUMN
+                            <ul>
+                                <li><a href="">お花の育て方</a></li>
+                                <li><a href="">ギフト</a></li>
+                                <li><a href="">季節のお花</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="top-img">
+        <div class="container">
+            <h1>お花屋さんMAP</h1>
+        </div>
+    </section>
+    <section class="find">
+        <div class="container">
+            <h2><img src="./img/h2-top-find.png" alt="お花屋さんを探す"></h2>
+            <a href="">MAPから探す</a>
+            <a href="">エリアから探す</a>
+        </div>
+    </section>
+    <section class="column">
+        <div class="container">
+            <h2><img src="./img/h2-top-column.png" alt="COLUMN"></h2>
+            <div class="care-box">
+                <div class="care-left">
+                    <a href=""><img src="./img/link-care.png" alt="お花の育て方"></a>
+                </div>
+                <div class="care-right">
+                    <p>お花は好きだけど、育て方や手入れの方法がわからない。せっかくもらった花だから長く楽しみたい。そんな方に、お花を長持ちさせるテクニック"を身に付けて、お花のある生活を長く楽しみましょう！
+                    </p>
+                </div>
+            </div>
+            <div class="gift-box">
+                <a href=""><img src="./img/link-gift.png" alt="ギフト"></a>
+                <p>誕生日や結婚記念日、開店祝いなどのお祝いごとにはお花を贈ろう。人気のお花がどのようなシチュエーションで贈られるのか、紹介します。</p>
+            </div>
+            <div class="season-box">
+                <img src="./img/link-season.png" alt="季節のお花">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;お花屋さんMAP</p>
+    </footer>
 </body>
 
 </html>
