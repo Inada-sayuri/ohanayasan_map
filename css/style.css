@@ -1,11 +1,180 @@
-body{
+body {
     color: #707070;
-
+    font-size: ;
+    margin: 0;
+    padding: 0;
 }
-a{
+
+img {
+    height: auto;
+}
+
+a {
     color: #707070;
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    padding-bottom: 30px;
+}
+
+.content h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+}
+
+/*------ ハンバーガーメニュー ---*/
+
+.logo {
+    display: none;
+}
+
+/*------ ホームのデザイン ---*/
+
+#home .top-img {
+    background-image: url(../img/img2017011018374258037800.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#home .top-img h1 {
+    text-align: center;
+    padding-top: 123px;
+    color: #fff;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    font-size: 34px;
+    line-height: 1;
+}
+
+.find-map, .find-area {
+    display: block;
+    margin: 0 auto 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+.find-map:hover, .find-area:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.find-map {
+    background-image: url(../img/flower1.jpg);
+}
+
+.find-area {
+    background-image: url(../img/flower2.jpeg);
+}
+
+.column {
+    font-size: 10px;
+}
+
+.care-box {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.care-left img, .season-box img {
+    width: 260px;
+    height: auto;
+}
+
+.care-right {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gift-right {
+    text-align: end;
+}
+
+.gift-right img {
+    width: 307px;
+}
+
+.gift-center {
+    margin: 30px auto 40px;
+    width: 50%;
+}
+
+.season-box {
+    padding-bottom: 30px;
+}
+
+/*------ 以下PC版デザイン ---*/
+
+@media only screen and (min-width:768px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    footer {
+        font-size: 27px;
+        padding-bottom: 50px;
+    }
+    /*------ ホームのデザイン ---*/
+    #home .top-img {
+        height: 682px;
+    }
+    #home .top-img h1 {
+        font-size: 90px;
+        padding-top: 296px;
+    }
+    .find-links {
+        display: flex;
+    }
+    .find-map, .find-area {
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        width: 45%;
+        font-size: 44px;
+    }
+    .column {
+        font-size: 18px;
+    }
+    .care-box {
+        margin-bottom: 90px;
+    }
+    .care-left img, .gift-right img, .season-box img {
+        width: auto;
+    }
+    .care-right {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .gift-center {
+        margin: 70px auto;
+        width: 420px;
+    }
+    .season-box {
+        margin-bottom: 90px;
+    }
 }
