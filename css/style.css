@@ -23,6 +23,51 @@ li {
     list-style: none;
 }
 
+header {
+    background: #fff;
+    right: 0;
+    line-height: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 50px;
+}
+
+.logo {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+/*------ ページトップイメージ ---*/
+
+.top-img {
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-img h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+/*------ コンテンツエリア　共通デザイン ---*/
+
 .container {
     width: 100%;
 }
@@ -44,44 +89,6 @@ li {
 
 .container h2 img, .content h2 img {
     width: auto;
-}
-
-header {
-    background: #fff;
-    right: 0;
-    line-height: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    padding-top: 50px;
-}
-
-.logo {
-    display: none;
-}
-
-.top-img {
-    padding-top: 50px;
-    background-size: cover;
-    background-position: center;
-    max-width: 1200px;
-    width: 100vw;
-    margin: 0 auto;
-}
-
-.top-img h1 {
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
-    font-size: 28px;
-    line-height: 1;
-}
-
-footer {
-    text-align: center;
-    font-size: 11px;
-    padding-bottom: 20px;
 }
 
 /*------ 目次のデザイン ---*/
@@ -140,7 +147,6 @@ footer {
 }
 
 #home .top-img h1 {
-    padding-top: 123px;
     font-size: 34px;
 }
 
@@ -151,8 +157,7 @@ footer {
 .find-map, .find-area {
     display: block;
     margin: 0 auto 50px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding: 10vh 0;
     width: 70vw;
     text-align: center;
     color: #fff;
@@ -222,11 +227,6 @@ footer {
     background-image: url(../img/flower9.jpg);
 }
 
-#care .top-img h1 {
-    line-height: 1.5;
-    padding-top: 40px;
-}
-
 .first-todo {
     background-color: #ffd6d6;
 }
@@ -255,15 +255,13 @@ footer {
     }
     #home .top-img h1 {
         font-size: 90px;
-        padding-top: 296px;
     }
     .find-links {
         display: flex;
     }
     .find-map, .find-area {
         display: block;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 18vh 0;
         width: 45%;
         font-size: 44px;
     }
