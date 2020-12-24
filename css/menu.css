@@ -151,7 +151,7 @@ li {
         height: 6vw;
     }
     .over {
-        transform: translateX(60vw);
+        transform: translateX(0vw);
     }
     .pc-menu {
         display: none;
