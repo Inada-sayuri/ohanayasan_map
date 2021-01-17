@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お花屋さんMAP</title>
+    <title>お花屋さんMAP｜季節のお花</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    <script src="./js/java.js"></script>
 </head>
 
-<body id="home">
+<body id="season">
     <header>
         <div class="logo">
             <a href="index.html"><img src="./img/logo.png" alt="お花屋さんMAP"></a>
@@ -62,47 +62,50 @@
             </nav>
         </div>
     </header>
-    <section class="top-img">
+    <section class="top-img" id="care-top">
         <div class="container">
-            <h1>お花屋さんMAP</h1>
+            <h1>季節のお花</h1>
         </div>
     </section>
-    <section class="find">
-        <div class="container">
-            <h2><img src="./img/h2-top-find.png" alt="お花屋さんを探す"></h2>
-            <div class="find-links">
-                <a href="" class="find-map">MAPから探す</a>
-                <a href="" class="find-area">エリアから探す</a>
-            </div>
+    <section class="mokuji">
+        <div class="content">
+            <h4>目次</h4>
+            <ul>
+                <li><a href="#spring">春におすすめの花</a></li>
+                <li><a href="#summer">夏におすすめの花</a></li>
+                <li><a href="#autumn">秋におすすめの花</a></li>
+                <li><a href="#winter">冬におすすめの花</a></li>
+            </ul>
         </div>
     </section>
-    <section class="column">
-        <div class="container">
-            <h2><img src="./img/h2-top-column.png" alt="COLUMN"></h2>
-            <div class="care-box">
-                <div class="care-left">
-                    <a href="care.html"><img src="./img/link-care.png" alt="お花の育て方を紹介したページへのリンクです"></a>
-                </div>
-                <div class="care-right">
-                    <p>お花は好きだけど、育て方や手入れの方法がわからない。せっかくもらった花だから長く楽しみたい。そんな方に、お花を長持ちさせるテクニック"を身に付けて、お花のある生活を長く楽しみましょう！
-                    </p>
-                </div>
-            </div>
-            <div class="gift-box">
-                <div class="gift-right">
-                    <a href=""><img src="./img/link-gift.png" alt="さまざまなシチュエーションに適したフラワーギフトを紹介します"></a>
-                </div>
-                <p class="gift-center">誕生日や結婚記念日、開店祝いなどのお祝いごとにはお花を贈ろう。人気のお花がどのようなシチュエーションで贈られるのか、紹介します。</p>
-            </div>
-            <div class="season-box">
-                <a href=""><img src="./img/link-season.png" alt="旬なお花を季節ごとに紹介します"></a>
-            </div>
+    <section id="spring">
+        <div class="content">
+            <h2><img src="./img/h2-season-spring.png" alt="春におすすめの花"></h2>
+            <p>春の花といっても多くの春の切り花は秋が終わりかけから冬に入る頃ぐらいには流通しはじめ、お花屋さんに出回ってきます。切り花に季節は一つ早く訪れますので春本番ってなったら春の切り花が手に入らなくなってたりします。春本番の季節には梅雨時期や夏の花がお花屋さんには出回るでしょう。</p>
+            <p>季節感があるようでないような感じがしますが、春に花でお花屋さんで買える切り花を紹介していきたいと思います。</p>
         </div>
     </section>
+    <section id="summer">
+        <div class="content">
+            <h2><img src="./img/h2-season-summer.png" alt="夏におすすめの花"></h2>
+        </div>
+    </section>
+    <section id="autumn">
+        <div class="content">
+            <h2><img src="./img/h2-season-autumn.png" alt="秋におすすめの花"></h2>
+        </div>
+    </section>
+    <section id="winter">
+        <div class="content">
+            <h2><img src="./img/h2-season-winter.png" alt="冬におすすめの花"></h2>
+        </div>
+    </section>
+    <div class="totop-btn">
+        <a href="index.html">トップへ戻る</a>
+    </div>
     <footer>
         <p>&copy;お花屋さんMAP</p>
     </footer>
-    <script src="./js/java.js"></script>
 </body>
 
 </html>

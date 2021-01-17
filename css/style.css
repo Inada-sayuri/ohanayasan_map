@@ -1,6 +1,6 @@
 body {
     color: #707070;
-    font-size: ;
+    font-size: 16px;
     line-height: 1.75;
     margin: 0;
     padding: 0;
@@ -21,6 +21,12 @@ a:hover {
 
 li {
     list-style: none;
+}
+
+ol li {
+    list-style-type: decimal;
+    margin-left: 25px;
+    margin-bottom: 10px;
 }
 
 header {
@@ -66,7 +72,11 @@ footer {
     line-height: 1.5;
 }
 
-/*------ コンテンツエリア　共通デザイン ---*/
+#care .top-img, #gift .top-img, #season .top-img {
+    height: 160px;
+}
+
+/*------ コンテンツエリア 共通デザイン ---*/
 
 .container {
     width: 100%;
@@ -74,7 +84,7 @@ footer {
 
 .content {
     width: 80vw;
-    margin: 0 auto 70px;
+    margin: 0 auto;
 }
 
 .content img {
@@ -91,11 +101,14 @@ footer {
     width: auto;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 /*------ 目次のデザイン ---*/
 
 .mokuji {
-    width: 80vw;
-    margin: 50px auto 90px;
+    margin: 50px auto 0;
 }
 
 .mokuji h4 {
@@ -127,6 +140,7 @@ footer {
 .mokuji ul li {
     position: relative;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .mokuji ul li::before {
@@ -137,6 +151,26 @@ footer {
     height: 20px;
     top: 4px;
     left: 0;
+}
+
+/*------ トップページに戻るボタン ---*/
+
+.totop-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.totop-btn a {
+    display: block;
+    padding: 10px 30px;
+    color: #707070;
+    background-color: #ccc;
+}
+
+.totop-btn a:hover {
+    background-color: #f00;
 }
 
 /*------ ホームのデザイン ---*/
@@ -217,14 +251,20 @@ footer {
     padding-bottom: 70px;
 }
 
-/*------ ホームのデザイン ---*/
-
-#care .top-img {
-    height: 160px;
-}
+/*------ 手入れ方法のデザイン ---*/
 
 #care .top-img {
     background-image: url(../img/flower9.jpg);
+}
+
+#bouquet, #pot, #foliage-plant {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.first-todo, .point-box {
+    margin: 50px 0;
+    padding: 20px;
 }
 
 .first-todo {
@@ -235,6 +275,86 @@ footer {
     background-color: #d6f1ff;
 }
 
+.point-box dl dt {
+    font-weight: bold;
+}
+
+.point-box dl dd {
+    margin-bottom: 10px;
+}
+
+.point-box dl dd:last-child {
+    margin-bottom: 0;
+}
+
+.how-to-care {
+    margin-top: 50px;
+}
+
+.how-to-care dt {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.how-to-care dt::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-left: 5px solid #ffa7a7;
+    height: 20px;
+    top: 4px;
+    left: 0;
+}
+
+.how-to-care dd {
+    margin-bottom: 30px;
+}
+
+.how-to-care dd:last-child {
+    margin-bottom: 0;
+}
+
+.memo-box01, .memo-box02 {
+    background-image: url(../img/memo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.memo-box01 {
+    padding: 60px 10px 50px 20px;
+}
+
+.memo-box02 {
+    padding: 60px 40px 50px 30px;
+}
+/*------ ギフトのデザイン ---*/
+#gift .top-img{
+    background-image: url(../img/flower6.jpg);
+}
+.gift-dl{
+    margin-bottom: 70px;
+}
+.gift-dl dt img{
+    margin-bottom: 30px;
+}
+.gift-dl dd dl dt{
+    margin-bottom: 10px;
+}
+/*------ 手入れ方法のデザイン ---*/
+#season .top-img{
+    background-image: url(../img/flower10.jpg);
+}
+#spring, #summer, #autumn, #winter{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+#season p{
+    margin-bottom: 30px;
+}
 /*------ 以下PC版デザイン ---*/
 
 @media only screen and (min-width:768px) {
@@ -242,12 +362,26 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+    .content {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .content img {
+        width: 100%;
+    }
     footer {
         font-size: 27px;
         padding-bottom: 50px;
     }
-    #care .top-img {
+    #care .top-img, #gift .top-img, #season .top-img {
         height: 300px;
+    }
+    /*------ 目次のデザイン ---*/
+    .mokuji h4 {
+        padding: 0 46%;
+    }
+    .mokuji h4::before, .mokuji h4::after {
+        width: 45%;
     }
     /*------ ホームのデザイン ---*/
     #home .top-img {
@@ -284,5 +418,17 @@ footer {
     }
     .season-box {
         margin-bottom: 90px;
+    }
+    /*------ 手入れ方法のデザイン ---*/
+    #bouquet, #pot, #foliage-plant {
+        padding-top: 30px;
+    }
+    .first-todo, .point-box {
+        padding: 30px 40px;
+    }
+    .memo-box01, .memo-box02 {
+        background-image: url(../img/memo-pc.png);
+        font-size: 16px;
+        padding: 90px 100px 50px 50px;
     }
 }
