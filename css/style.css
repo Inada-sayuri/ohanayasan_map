@@ -44,6 +44,7 @@ footer {
     padding-bottom: 20px;
 }
 
+
 /*------ ページトップイメージ ---*/
 
 .top-img {
@@ -66,6 +67,7 @@ footer {
     line-height: 1.5;
 }
 
+
 /*------ コンテンツエリア　共通デザイン ---*/
 
 .container {
@@ -81,15 +83,18 @@ footer {
     width: 80vw;
 }
 
-.container h2, .content h2 {
+.container h2,
+.content h2 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
 }
 
-.container h2 img, .content h2 img {
+.container h2 img,
+.content h2 img {
     width: auto;
 }
+
 
 /*------ 目次のデザイン ---*/
 
@@ -106,7 +111,8 @@ footer {
     margin-bottom: 50px;
 }
 
-.mokuji h4::before, .mokuji h4::after {
+.mokuji h4::before,
+.mokuji h4::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -139,6 +145,7 @@ footer {
     left: 0;
 }
 
+
 /*------ ホームのデザイン ---*/
 
 #home .top-img {
@@ -154,7 +161,8 @@ footer {
     padding-bottom: 20px;
 }
 
-.find-map, .find-area {
+.find-map,
+.find-area {
     display: block;
     margin: 0 auto 50px;
     padding: 10vh 0;
@@ -168,7 +176,8 @@ footer {
     background-position: center;
 }
 
-.find-map:hover, .find-area:hover {
+.find-map:hover,
+.find-area:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -190,7 +199,8 @@ footer {
     margin-bottom: 50px;
 }
 
-.care-left img, .season-box img {
+.care-left img,
+.season-box img {
     width: 70vw;
     height: auto;
 }
@@ -217,6 +227,7 @@ footer {
     padding-bottom: 70px;
 }
 
+
 /*------ ホームのデザイン ---*/
 
 #care .top-img {
@@ -234,6 +245,72 @@ footer {
 .point-box {
     background-color: #d6f1ff;
 }
+
+
+/*------ 新着記事部分デザイン --------*/
+
+.column-top-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.column-top-list li {
+    background-color: #FCF5EE;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:570px) {
+    .column-top-list li {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:571px) {
+    .column-top-list li {
+        width: 33%;
+    }
+}
+
+.column-top-list li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.column-top-list li a img {
+    border: 0;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.column-top-list li time {
+    padding-left: 1rem;
+}
+
+.column-top-list li h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+.column-list-button {
+    display: block;
+    text-align: center;
+    margin: 50px auto 100px auto;
+    background-color: #999;
+    width: 300px;
+}
+
+.column-list-button a {
+    color: #fff;
+}
+
 
 /*------ 以下PC版デザイン ---*/
 
@@ -259,7 +336,8 @@ footer {
     .find-links {
         display: flex;
     }
-    .find-map, .find-area {
+    .find-map,
+    .find-area {
         display: block;
         padding: 18vh 0;
         width: 45%;
@@ -271,7 +349,9 @@ footer {
     .care-box {
         margin-bottom: 90px;
     }
-    .care-left img, .gift-right img, .season-box img {
+    .care-left img,
+    .gift-right img,
+    .season-box img {
         width: auto;
     }
     .care-right {
