@@ -261,14 +261,15 @@ footer {
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:767px) {
     .column-top-list li {
         width: 100%;
         max-width: 500px;
+        margin: 10px auto;
     }
 }
 
-@media screen and (min-width:571px) {
+@media screen and (min-width:768px) {
     .column-top-list li {
         width: 33%;
     }
